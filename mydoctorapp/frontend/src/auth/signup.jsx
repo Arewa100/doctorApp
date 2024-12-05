@@ -8,9 +8,11 @@ const Signup = () => {
   const navigate = useNavigate();
 
   const userDetails = {
+    firstname: "",
+    lastname:"",
     username: "",
-    email: "",
     password: "",
+
 };
 
   
@@ -25,12 +27,13 @@ const Signup = () => {
 
     }
 
-    // console.log(data)
-
+    console.log(data.firstname)
     
-    const handleSubmit = ()=> {
+    
+    const handleSubmit = (event)=> {
+      event.preventDefault()
       console.log('submitted....')
-      window.alert("signing up...")
+      // window.alert("signing up...")
       // setTimeout(()=>{
           // navigate("/")
       // }, 6000)
@@ -50,6 +53,26 @@ const Signup = () => {
             <input
               type="text"
               className={style.input}
+              name="firstname"
+              placeholder="Enter Firstname"
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              className={style.input}
+              name="lastname"
+              placeholder="Enter Lastname"
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              className={style.input}
               name="username"
               placeholder="Enter Username"
                 onChange={handleChange}
@@ -57,17 +80,6 @@ const Signup = () => {
               required
             />
           </div>
-          <div>
-            <input
-              type="email"
-              className={style.input}
-              name="email"
-              placeholder="Enter Email"
-              onChange={handleChange}
-              required
-            />
-          </div>
-  
           <div>
             <input
               type="password"

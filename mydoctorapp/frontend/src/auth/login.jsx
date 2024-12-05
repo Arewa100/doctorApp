@@ -11,6 +11,7 @@ const Login = ()=> {
         username: "",
         password: ""
     }
+
     const [data, setData] = useState(userDetails)
 
     function handleChange(event) {
@@ -20,7 +21,7 @@ const Login = ()=> {
         })
     }
 
-    // console.log(data)
+    console.log(data)
 
 
     // const handleSubmit = ()=> {

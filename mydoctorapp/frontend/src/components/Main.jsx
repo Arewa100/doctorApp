@@ -1,14 +1,20 @@
 import style from "../styles/main.module.css"
 import NavExtension from "./NavExtension"
 import CustomButton from "../reusables/CustomButton"
+import Footer from "../components/Footer"
 
 const Main = ()=> {
+
+    const handleSubmit = ()=>{
+
+        window.alert("loading...")
+    }
 
     return(
         <>
         <div className={style.mainBackground}>
             <NavExtension/>
-
+            <form action=""  onSubmit={handleSubmit}>
             <div className={style.infoDiv}>
                 <div className={style.select}>
                     <h1>select symptoms</h1>
@@ -90,9 +96,14 @@ const Main = ()=> {
                 <div className={style.flexCheckBox}>
                     <p>14. ⁠Mouth ulcers</p><input type="checkbox" className="checkbox"/>
                 </div>
+
+                <div className={style.submitContainer}>
+                    <CustomButton style={style.submit} type="submit" textContent="Submit" value="login"/>
+                </div>
+                
                 
             </div>
-
+            </form>
             <div className={style.result}>
                 <div className={style.resultText}>
                     <h1>result</h1>
@@ -116,6 +127,8 @@ const Main = ()=> {
 
             
         </div>
+
+        <Footer/>
         </>
     )
 }
