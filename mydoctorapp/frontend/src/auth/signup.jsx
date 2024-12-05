@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import style from "../styles/signup.module.css";
 import CustomButton from "../reusables/CustomButton";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios"
 
 const Signup = () => {
-
+  
   const navigate = useNavigate();
 
   const userDetails = {
@@ -27,17 +28,25 @@ const Signup = () => {
 
     }
 
-    console.log(data.firstname)
+    // console.log(data.firstname)
+
+      const handleSubmit = async(e)=>{
+        e.preventDefault()
+        console.log(data)
+        try{
+          console.log("working")
+          const response = await axios.post("http://localhost:9000/api/user/register",data)
+          console.log(response.status)
+          if(response.status == 201){
+            navigate("/login")
+          }
+          console.log(response)
     
-    
-    const handleSubmit = (event)=> {
-      event.preventDefault()
-      console.log('submitted....')
-      // window.alert("signing up...")
-      // setTimeout(()=>{
-          // navigate("/")
-      // }, 6000)
-  }
+        }catch(error){
+          console.error(error)
+        }
+          
+      }
 
 
   return (

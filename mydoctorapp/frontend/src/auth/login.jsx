@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from '../styles/login.module.css'
 import CustomButton from '../reusables/CustomButton';
 import { Link, useNavigate} from "react-router-dom";
+import axios from "axios"
 
 const Login = ()=> {
 
@@ -23,16 +24,31 @@ const Login = ()=> {
 
     console.log(data)
 
+    const handleSubmit = async(e)=>{
+        e.preventDefault()
+        console.log(data)
+        try{
+          console.log("working")
+          const response = await axios.post("http://localhost:9000/api/user/login",data)
+          console.log(response.data)
+          if(response.data === "Logged in"){
+            navigate("/doctor")
+          }else {
+            alert("Wrong password")
+          }
+    
+        }catch(error){
+          console.error(error)
+        }
+          
+      }
 
-    // const handleSubmit = ()=> {
-    //     navigate('./booklist')
-    // }
-    // onSubmit={handleSubmit}
+
     return (
         <>
         <div className={style.loginDiv}>
         
-            <form action="" className={style.form} >
+            <form action="" className={style.form} onSubmit={handleSubmit} >
 
                 <div className={style.login}>
                     <h1>Login</h1>
@@ -51,7 +67,7 @@ const Login = ()=> {
                     <input
                     type="password"
                     className={style.input}
-                    name="email"
+                    name="password"
                     placeholder="Enter password"
                         onChange={handleChange}
                     required
