@@ -34,7 +34,7 @@ const NavExtension = ()=> {
                     </ul>
 
                     <div className={style.buttons}>
-                        <CustomButton style={style.signup} type="submit" textContent="View" onClick={handlClick} value="view"/>
+                        <CustomButton style={style.signup} type="submit" textContent="@" onClick={handlClick} value="view"/>
                         <CustomButton style={style.signup} type="submit" textContent="Login Out" onClick={handlClick} value="home"/>
                     </div>
                 </div>
