@@ -1,0 +1,101 @@
+.navbar {
+    width: 1220px;
+    height: 47px;
+    margin: auto;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.externalDiv {
+    width: 100%;
+    height: 110px;
+    align-items: center;
+    display: flex;
+    background-color: #1A374F;
+    /* background-color: red; */
+    overflow: hidden;
+    position: fixed;
+    margin: auto;
+}
+
+.navbar h1 {
+    width: 302px;
+    height: 42px;
+    /* background-color: yellow; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+.navbar h1 span {
+    color:#F41010
+}
+
+
+.homeNav {
+    width: 338px;
+    height: 23px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li>a {
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+
+}
+
+.navbar ul li>a:hover {
+    color: black;
+}
+
+.buttonAndHomeDiv {
+    width: 652px;
+    height: 46px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup {
+    margin-left: 20px;
+    width: 112px;
+    height: 46px;
+    background-color: #F41010;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+    background-color: black;
+}
+
+.buttons {
+    width: 269px;
+    height: 46px;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .buttons { */
+    /* background-color: pink; */
+/* } */

@@ -1,0 +1,12 @@
+.logo h1 {
+    width: 302px;
+    height: 42px;
+    /* background-color: yellow; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:white;
+}
+
+.logo h1 span {
+    color:#F41010;
+}

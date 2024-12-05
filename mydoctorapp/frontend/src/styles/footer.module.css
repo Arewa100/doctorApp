@@ -1,0 +1,88 @@
+.footer {
+    width: auto;
+    height: 300px;
+    background-color:#1A374F;
+}
+.whoWeAreDiv {
+    width: inherit;
+    height: 23px;
+    /* background-color: red; */
+    align-items: center;
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 30px;
+}
+.outerDiv {
+    width: 1220px;
+    height: 90px;
+    /* background-color: pink; */
+    display: flex;
+    margin: auto;
+}
+
+.whoWeAreDiv p{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+.aboutUsDiv {
+    width: 1220px;
+    height: 23px;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutUsDiv a{
+    text-decoration: none;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 15px;
+    /* background-color: aquamarine; */
+}
+
+.partner {
+    margin-left: 155px;
+}
+
+/* .privacy {
+    margin-left: 290px;
+}  */
+
+.logo {
+    /* width: 1400px; */
+    /* margin: 1220px; */
+    height: 40px;
+    /* background-color: rgb(114, 80, 80); */
+    margin-top: 65px;
+}
+
+.logoDiv {
+    width: 1220px;
+    height: 40px;
+    /* background-color: aqua; */
+    display: flex;
+    margin: auto;
+}
+
+.theIcons {
+    width: 1112px;
+    height: 40px;
+    /* background-color: aqua; */
+}
+
+.iconsDiv {
+    height: inherit;
+    width: 319px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}

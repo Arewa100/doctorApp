@@ -1,0 +1,110 @@
+.landingpage {
+    width: auto;
+    height: 100%;
+    margin: auto;
+    /* background-color: #14619F; */
+}
+
+.doctorPicsDiv {
+    max-width: 1255px;
+    height: 486px;
+    margin: auto;
+    background-color: #D9D9D9;
+}
+
+.doctorPicsDiv img {
+    width: 1255px;
+    height: 486px;
+    margin: auto;
+}
+
+.bodySection {
+    width: 1255px;
+    height: 669px;
+    margin: auto;
+    background-image: url(../assets/image/iconImage.svg);
+}
+
+.whatWeDo {
+    width: 740px;
+    height: 361px;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.whatWeDo img{
+    width: 200px;
+}
+
+.whatWeCanDoOuterDiv {
+    width: inherit;
+    height: inherit;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+
+}
+.text {
+    width: 455px;
+    height: 361px;
+    /* background-color: yellow; */
+}
+
+.text h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    width: 455px;
+    height: 70px;
+}
+
+.text span {
+    color: #F41010;
+}
+.contentBox {
+    width: 455px;
+    height: 291px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow:  rgb(99, 99, 99) 5px 5px 5px 1px;
+}
+
+.contentBox p {
+    width: 410px;
+    height: 188px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight:lighter;
+    padding-left: 13px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0%    { opacity: 0; }
+    20%   { opacity: 1; }
+    80%   { opacity: 0; }
+    100%  { opacity: 1; }
+  }
+
+.getStarted {
+    width: 431px;
+    height: 46px;
+    background-color: #F41010;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-left: 13px;
+    margin-top: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.getStarted:hover {
+    background-color: black;
+}

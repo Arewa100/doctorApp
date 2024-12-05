@@ -1,0 +1,101 @@
+.input {
+    margin-top: 18px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid grey;
+    width: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.input:hover {
+    border-bottom: 1px solid #F41010;;
+    cursor: pointer;
+}
+
+.input::placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 6px;
+}
+
+.submit {
+    /* background-color: red; */
+    margin-top: 40px;
+
+}
+.button {
+    background-color: rgb(23, 23, 57);
+    font-weight: 40;
+    font-size: 12px;
+    color: white;
+    border: none;
+    padding: 6px;
+    background-color: #F41010;
+    border: .002rem solid rgba(255, 255, 255, 0.628);
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color:  black;
+}
+
+.form {
+    width: 300px;
+    height:300px;
+    margin: auto;
+    border:.02rem solid grey;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.login {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: blue; */
+    margin-top: 30px;
+}
+
+.login p {
+    margin-top: 30px;
+}
+
+.dontHaveAccount {
+    margin: auto;
+    /* background-color: rgb(70, 61, 61); */
+}
+
+.dontHaveAccount p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    margin-left: 8px;
+    font-weight: 200;
+    margin-top: 5px;
+    /* color: white; */
+}
+
+.dontHaveAccount p a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 10px;
+    color:#F41010;
+    font-weight: 200;
+    margin-top: 1px;
+    margin-left: 2px;
+    text-decoration: none;
+}
+
+.loginDiv {
+    text-align: center;
+    height: 100vh;
+    background-color: #150404;
+    background-image: url(../assets/image/iconImage.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: auto;
+    display: flex;
+}
