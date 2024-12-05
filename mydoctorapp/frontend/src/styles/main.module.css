@@ -146,3 +146,9 @@
     justify-content: space-around;
     margin-top: 10px;
 }
+
+.mainDiv {
+    /* background-color: red; */
+    display: flex;
+    margin: auto;
+}

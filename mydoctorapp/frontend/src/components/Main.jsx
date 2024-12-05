@@ -14,6 +14,9 @@ const Main = ()=> {
         <>
         <div className={style.mainBackground}>
             <NavExtension/>
+
+            <div className={style.mainDiv}>
+
             <form action=""  onSubmit={handleSubmit}>
             <div className={style.infoDiv}>
                 <div className={style.select}>
@@ -123,6 +126,7 @@ const Main = ()=> {
                     <CustomButton style={style.nextAndback} type="submit" textContent="next"/>
                 </div>
                 
+            </div>
             </div>
 
             
